@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Alexander's Fake Website</title>
+        <link rel="stylesheet" type="text/css" href="myStyle.css">
+    </head>
+
+    <body style="background-color:rgb(231, 166, 166);">
+        <script src = "myScript.js"></script>
+        
+        <div>
+        <h1 id="hello">Hello my Name is Alex and this is my website!</h1>
+       <a href="https://www.facebook.com/alex.boehm.39/" style="margin-left: 44%;"><img src ="img/facebook-512.webp" alt="Links" width="60px" height="60px"></a> 
+       <img src ="img/mail.jpg" alt="Links" id="mailId" onClick="myEmail()" width="60px" height="60px"></a> 
+       <a href="https://giphy.com/channel/alexboehm"><img src="img/Giphy-icon.png" alt="Links" width="60px" height="60px"></a> 
+        </div>
+
+        <hr>
+        <div id="list">
+             <h2 id="intro">I'm building this site using AMPPS <span>for fun</span> and to show off my <em>skills</em> as a web developer</h2>
+            <p>
+                <span class="sub-head"> Skills are as follows: </span> 
+                <br> <span class="item" id="item1">HTML/CSS/JavaScript- Fair</span>
+                <br> <span class="item" id="item2">Java & Python -Good</span>
+                <br> <span class="item" id="item3">Talking About Coding -Incredible</span>
+                <br> <span class="item" id="item4">mySQL- Fair</span>
+                <br> <span class="item" id="item5">Android Studio</span>
+                <br> <span class="item" id="item6">Everything Else- I'll Figure It Out</span>
+            </p>
+            <button id ="myButton" style="background-color: pink; width: 100px; font-weight: bold;" onclick="myButton()">HighLights!</button>
+        </div>
+        <div id="dropDownText">
+            <p>Check Out My Repos!</p>
+            <div id="hiddenDiv">
+                <table border="7px solid black">
+                    <tr>
+                        <td>
+                            <a href = "https://bitbucket.org/zombotastic/lis4331/src/master/">Mobile Web Application Development</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href = "https://bitbucket.org/zombotastic/lis4369/src/master/">Advanced Mobile Application Development</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href = "https://bitbucket.org/zombotastic/tecnologicrobot">Personal Game Project</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+
+        </div>
+        <iframe name="iframe-a" src="https://gph.is/g/4LmDm7v" height="800px" width="800px" title="My Game Project" id="pongGame"></iframe>
+        <div class="Blurb">
+            <p>
+                    I built this project in Java using the Eclipse IDE
+                <br> for a networking class. Really I just wanted to get to program for my final project,
+                <br> so I made this multiplayer game that implements a Java Server Socket. Then I uploaded it to the network VM
+                <br> so I could play with other users on the VLAN!
+                <br> It was my first forray in making a game, and probably the most impressive coding project I've made by myself.
+                <br> There were a lot of questions without easy awnsers.
+                <br> I also learned how useful git bash and bitbucket were for uploading a code project into a VM. 
+            </p>
+        </div>
+        <hr>
+        <div id = "androidDev">
+        <iframe name="iframe-a" src="https://media.giphy.com/media/rE1fWS7esyC3qjSZdP/giphy.gif" height="800px" width="800px" title="My Android Prject" id="androidView"></iframe>
+        <div class="Blurb">
+            <p>
+                I spent some time developing android projects under the instruction of my beloved professor Mark Jowett.
+                <br> Android proved to be somewhat challenging to learn at first but eventually felt like second nature to me.
+                <br> My flavor of Android development uses Java as the core language, which meant that working in android allowed 
+                <br> me to sharpen my Java skills while also learning about development for a completely new platform.
+                <br> I learned a great deal from a year of Android, and I believe it has strengthed my understanding of
+                <br> both application, and web development.
+            </p>
+        </div>
+        <hr>
+    </div>
+    </body>
+
+</html>
