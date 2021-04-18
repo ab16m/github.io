@@ -1,6 +1,6 @@
 #hello{
     background-color: white;
-    height: 300px;
+    height: 20%;
     color: black;
     font-size: xx-large;
     text-align: center;
@@ -38,7 +38,7 @@
     float:left;
 }
 .Blurb{
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     padding-top: 300px;
 }
