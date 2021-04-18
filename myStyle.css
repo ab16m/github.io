@@ -1,5 +1,6 @@
 #hello{
     background-color: white;
+    height: 300px;
     color: black;
     font-size: xx-large;
     text-align: center;
@@ -68,4 +69,20 @@ hr { height: 5px; color: black; background-color: black; }
 #dropDownText:hover #hiddenDiv{
     display: block;
     text-align: center;   
+}
+
+
+#shipId{
+    margin-left: 13%;
+    visibility: hidden;
+}
+#enemyId{
+    padding-bottom: 15%;
+    margin-left: 13%;
+    visibility: hidden
+}
+#myBullet
+{   position: relative;
+    margin-left: 14%;
+    visibility: hidden;
 }
