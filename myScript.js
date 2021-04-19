@@ -46,14 +46,34 @@ function myEmail(){
  var enemySpacing = 13;
  var direction = 1;
  var Bulletm = 0;
- 
+ var FirstPress = true;
+ var FirstConsole = true;
+ var myTime = 0;
+ var handler;
  function playGame(){
-    document.getElementById("shipId").style.visibility = "visible";
-    document.getElementById("enemyId").style.visibility = "visible";
-    thisGame = new Game();
-    thisGame.play();
- 
- }
+     if(FirstPress==true){
+         handler = setInterval(timeMe,1000);
+         document.getElementById("shipId").style.visibility = "visible";
+         document.getElementById("enemyId").style.visibility = "visible";
+         thisGame = new Game();
+         thisGame.play();
+         FirstPress=false;}
+     else{
+         if(FirstConsole==false)
+         {
+          clearTimeout(handler);
+          FirstConsole=true
+          myTime = 0;
+          handler = setInterval(timeMe,1000);
+         }
+         document.getElementById("enemyId").setAttribute("src", "img/enemy.png") 
+         console.log("gameRunning");
+         document.getElementById("enemyId").style.visibility = "visible";
+         } 
+         function timeMe(){
+             myTime++;
+         }
+     }
  
  
  function timer(){
@@ -69,8 +89,18 @@ function myEmail(){
  function bulletAction(){
      document.getElementById("myBullet").style.bottom = Bulletm + "px";
      Bulletm += 10;
-     if(document.getElementById("myBullet").style.marginLeft === document.getElementById("enemyId").style.marginLeft && Bulletm > 99 * 3 && Bulletm < 99 * 3 + 60 + 20)
-     {window.alert("Wou Won!")}
+     if(document.getElementById("myBullet").style.marginLeft == document.getElementById("enemyId").style.marginLeft && Bulletm > 99 * 3 + 60 && Bulletm < 99 * 3 + 60 + 60)
+     {
+         document.getElementById("enemyId").setAttribute("src", "img/explosion.png");
+         setTimeout(goAway, 2000);
+         function goAway(){
+             document.getElementById("enemyId").style.visibility = "hidden";
+             if(FirstConsole==true){
+             window.alert("You Won!\nIt took: " + myTime + " seconds");
+             FirstConsole = false;
+             }
+         }
+     }
  }
  class Game{
      constructor(x=1)
@@ -82,7 +112,7 @@ function myEmail(){
      }
      play(){
         console.log("Game Started")
-        var x = setInterval(timer, 100);
+        var x = setInterval(timer, 300);
         var spacing = 13;
         var myBool = 1;
         var bulletFired;
