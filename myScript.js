@@ -138,7 +138,7 @@ function bulletRain1(){
         document.getElementById("enemyBulletSub1").style.top = Bulletes1 + "px";
         Bulletes1 += 10;
         
-        var shipDead = shipHZ.getPropertyValue('margin-left');nbggf
+        var shipDead = shipHZ.getPropertyValue('margin-left');
         var hitZone = parseInt(shipDead);
 
         var bulletHit = sub1BulletHit.getPropertyValue('margin-left');
