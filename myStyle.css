@@ -71,7 +71,8 @@ hr { height: 5px; color: black; background-color: black; }
     text-align: center;   
 }
 
-#myJavaScriptHome{
+#myJavaScriptGame{
+    background-repeat: no-repeat;
     
 }
 
@@ -80,12 +81,35 @@ hr { height: 5px; color: black; background-color: black; }
     visibility: hidden;
 }
 #enemyId{
+    margin-left: 13%;
+    visibility: hidden;
+}
+#enemyBulletId{
+    position: relative;
     padding-bottom: 15%;
     margin-left: 13%;
-    visibility: hidden
+    visibility: hidden;
 }
 #myBullet
 {   position: relative;
-    margin-left: 14%;
+    margin-left: 13%;
+    visibility: hidden;
+}
+#enemySub1{
+    margin-left: 9.5%;
+    visibility: hidden;
+}
+#enemySub2{
+    margin-left: 3.5%;
+    visibility: hidden;
+}
+#enemyBulletSub1{
+    position: relative;
+    margin-left: 10.7%;
+    visibility: hidden;
+}
+#enemyBulletSub2{
+    position: relative;
+    margin-left: 6.2%;
     visibility: hidden;
 }
