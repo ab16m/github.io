@@ -43,7 +43,7 @@ switch(check){
     }
     check += 1;
 }
-var life = 3;
+var lifeNum = 3;
 var Bulletes1 = 0;
 var Bulletes2 = 0;
 var enemySpacing = 13;
@@ -53,6 +53,8 @@ var FirstPress = true;
 var FirstConsole = true;
 var myTime = 0;
 var handler;
+
+
 
 var shipElement = document.getElementById('shipId');
 var shipHZ = window.getComputedStyle(shipElement);
@@ -91,6 +93,7 @@ function playGame(){
         thisGame = new Game();
         thisGame.play();
         FirstPress=false;
+        document.getElementById("lifepoints").style.visibility = "visible";
         }
     else{
         if(FirstConsole==false)
@@ -109,6 +112,7 @@ function playGame(){
                 document.getElementById("enemySub2").setAttribute("src", "img/enemy.png")
                 document.getElementById("enemySub2").style.visibility = "visible";
                 document.getElementById("myJavaScriptGame").style.backgroundImage = "url('img/spacecase.png')";
+                document.getElementById("lifepoints").style.visibility="visible";
             }   
         } 
         function timeMe(){
@@ -122,6 +126,12 @@ function toBulletRain1(){
     setInterval(bulletRain1, 5);
 }
 
+function minusLife(){
+    if(life == 3){
+        life = life - 1;
+        
+    }
+}
 function bulletRain1(){
 
     var isVisible = sub1HZ.getPropertyValue("visibility");
@@ -147,19 +157,26 @@ function bulletRain1(){
         
             if(hitZone - bulletPath < 0 && hitZone - bulletPath > -30 && Bulletes1 > 99 * 3 + 60 && Bulletes1 < 99 * 3 + 60 + 60)
                 {
+                    if(life < 1)
+                    {
                     document.getElementById("shipId").setAttribute("src", "img/explosion.png");
                     setTimeout(goAway, 2000);
                     function goAway(){
                         document.getElementById("shipId").style.visibility = "hidden";
                         if(FirstConsole==true){
-                        window.alert("You Lost!\nYou lived for: " + myTime + " seconds");
-                        document.getElementById("myJavaScriptGame").style.backgroundImage = "none";
-                        document.getElementById("shipId").style.visibility="hidden";
-                        document.getElementById("enemyId").style.visibility="hidden";
-                        document.getElementById("enemySub1").style.visibility="hidden";
-                        document.getElementById("enemySub2").style.visibility="hidden";
-                        FirstConsole = false;
+                            window.alert("You Lost!\nYou lived for: " + myTime + " seconds");
+                            document.getElementById("myJavaScriptGame").style.backgroundImage = "none";
+                            document.getElementById("shipId").style.visibility="hidden";
+                            document.getElementById("enemyId").style.visibility="hidden";
+                            document.getElementById("enemySub1").style.visibility="hidden";
+                            document.getElementById("enemySub2").style.visibility="hidden";
+                            FirstConsole = false;
+                            }
                         }
+                    }
+                    else{
+                        minusLife();
+
                     }
                 }
         if(Bulletes1 > 3000)

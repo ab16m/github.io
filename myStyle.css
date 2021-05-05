@@ -75,7 +75,9 @@ hr { height: 5px; color: black; background-color: black; }
     background-repeat: no-repeat;
     
 }
-
+#note{
+    margin-top: 200px;
+}
 #shipId{
     margin-left: 13%;
     visibility: hidden;
