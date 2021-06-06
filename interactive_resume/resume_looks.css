@@ -1,0 +1,47 @@
+#hello{
+    background-color: white;
+    height: 100px;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    border: 10px solid black;
+    box-shadow: 15px 15px 5px rgba(128, 128, 128, 0.503);
+}
+#header{
+    background-color:rgb(231, 166, 166);;
+}
+#Hello{
+text-align: center;
+}
+body{
+    background-color: rgb(231, 166, 166);;
+}
+pre{
+    font-size: large;
+}
+p:hover{
+    background-color: aliceblue;
+    font-size: x-large;
+
+}
+pre:hover{
+    background-color: aliceblue;
+    font-size: x-large;
+}
+#resume{
+    border: 3px solid black;
+    padding: 3%;
+    margin-left: 17%;
+    background-color: lightgray;
+    width: 60%;
+    box-shadow: 15px 15px 5px rgba(128, 128, 128, 0.503);
+}
+h2:hover{
+    color: rgb(121, 9, 9);
+}
+h2 span{
+    visibility: hidden;
+}
+h2:hover span{
+    visibility: visible;
+}

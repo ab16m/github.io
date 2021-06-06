@@ -40,6 +40,11 @@ switch(check){
         document.getElementById("item6").style.fontSize="larger";
         //document.getElementById(item).style.
         break;
+    case 7:
+        document.getElementById("resume").style.color="rgb(150,170,255)";
+        document.getElementById("resume").style.fontSize="larger";
+        //document.getElementById(item).style.
+        break;
     }
     check += 1;
 }
