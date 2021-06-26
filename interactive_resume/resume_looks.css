@@ -45,3 +45,6 @@ h2 span{
 h2:hover span{
     visibility: visible;
 }
+#title{
+    font-size: larger;
+}
