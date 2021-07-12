@@ -4,23 +4,32 @@
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Alexander's Fake Website</title>
+        <title>Alexander's Website</title>
         <link rel="stylesheet" type="text/css" href="myStyle.css">
     </head>
 
     <body style="background-color:rgb(231, 166, 166);">
         
         
-       <div>
-       <h1 id="hello">Hello my Name is Alex and this is my website!</h1>
-       <a href="https://www.facebook.com/alex.boehm.39/" style="margin-left: 44%;"><img src ="img/facebook-512.webp" class="shadow" alt="Links" width="60px" height="60px"></a> 
-       <img src ="img/mail.jpg" class="shadow" alt="Links" id="mailId" onClick="myEmail()" width="60px" height="60px"></a> 
-       <a href="https://giphy.com/channel/alexboehm"><img src="img/Giphy-icon.png" class="shadow" alt="Links" width="60px" height="60px"></a> 
+       <div id="HeadNavBar">
+            <div id="hello">
+                <span>Alexander Boehm's Website!</span>
+                <a href="https://www.facebook.com/alex.boehm.39/" style="margin-left: 35%;"><img src ="img/facebook-512.webp" class="shadow" alt="Links" width="60px" height="60px"></a> 
+                <img src ="img/mail.jpg" class="shadow" alt="Links" id="mailId" onClick="myEmail()" width="60px" height="60px" style="margin-left: 3%;"></a> 
+                <a href="https://giphy.com/channel/alexboehm" style="margin-left: 3%;"><img src="img/Giphy-icon.png" class="shadow" alt="Links" width="60px" height="60px"></a>
+                <a href="https://www.linkedin.com/in/alexander-boehm-62a659171" style="margin-left: 3%;"><img src="img/linked.png" class="shadow" alt="Links" width="60px" height="60px"></a> 
+            </div>
+            <div id="NavLinks">
+               <span><a href="index.html" style="text-decoration: none">Home</a></span>
+               <span><a href="javascript_game/my_game.html" style="text-decoration: none">Game</a></span> 
+               <span><a href="interactive_resume/resume.html" style="text-decoration: none">Resume</a></span> 
+               <span><a href="coming_soon/media.html" style="text-decoration: none">Media</a></span> 
+            </div>
        </div>
 
         <hr>
         <div id="list">
-             <h2 id="intro">I'm building this site using AMPPS <span>for fun</span> and to show off my <em>skills</em> as a web developer</h2>
+             <h2 id="intro">I'm building this site using vanilla HTML, CSS, and JS for fun and to show off my <em>skills</em> as a web developer</h2>
             <p>
                 <span class="sub-head"> Skills are as follows: </span> 
                 <br> <span class="item" id="item1">HTML/CSS/JavaScript- Fair</span>
@@ -29,36 +38,36 @@
                 <br> <span class="item" id="item4">mySQL- Fair</span>
                 <br> <span class="item" id="item5">Android Studio- Good</span>
                 <br> <span class="item" id="item6">Everything Else- I'll Figure It Out</span>
-                <br><a href="https://ab16m.github.io/github.io/interactive_resume/resume.html"><span class="item" id="resume">Would you like to see my Resume?</span></a> 
+                <br><a href="interactive_resume/resume.html"><span class="item" id="resume">Would you like to see my Resume?</span></a> 
             </p>
             <button id ="myButton" style="background-color: pink; width: 100px; font-weight: bold;" onclick="myButton()">HighLights!</button>
         </div>
-        <div id="dropDownText">
-            <p>Check Out My Repos!</p>
-            <div id="hiddenDiv">
-                <table border="7px solid black">
-                    <tr>
-                        <td>
-                            <a href = "https://bitbucket.org/zombotastic/lis4331/src/master/">Mobile Web Application Development</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href = "https://bitbucket.org/zombotastic/lis4369/src/master/">Advanced Mobile Application Development</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href = "https://bitbucket.org/zombotastic/tecnologicrobot">Personal Game Project</a>
-                        </td>
-                    </tr>
-                </table>
+            <div id="dropDownText">
+                <p>Check Out My Repos!</p>
+                <div id="hiddenDiv">
+                    <table border="7px solid black">
+                        <tr>
+                            <td>
+                                <a href = "https://bitbucket.org/zombotastic/lis4331/src/master/">Mobile Web Application Development</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href = "https://bitbucket.org/zombotastic/lis4369/src/master/">Advanced Mobile Application Development</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href = "https://bitbucket.org/zombotastic/tecnologicrobot">Personal Game Project</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+            <br>
+        <div id="pongGame">
+        <img src="https://media.giphy.com/media/PS9tnroNO9uo8qrYqy/giphy.gif" height="500px" width="800px"" ></iframe>
         </div>
-        <br>
-
-        </div>
-        <iframe name="iframe-a" src="https://gph.is/g/4LmDm7v" height="800px" width="800px" title="My Game Project" id="pongGame"></iframe>
         <div class="Blurb">
             <p>
                     I built this project in Java using the Eclipse IDE
@@ -72,10 +81,10 @@
         </div>
         <hr>
         <div id = "androidDev">
-        <iframe name="iframe-a" src="https://media.giphy.com/media/rE1fWS7esyC3qjSZdP/giphy.gif" height="800px" width="800px" title="My Android Prject" id="androidView"></iframe>
+        <img src="https://media.giphy.com/media/rE1fWS7esyC3qjSZdP/giphy.gif" height="700px" width="800px" id="androidView"></iframe>
         <div class="Blurb">
             <p>
-                I spent some time developing android projects under the instruction of my beloved professor Mark Jowett.
+                    I spent some time developing android projects under the instruction of my beloved professor Mark Jowett.
                 <br> Android proved to be somewhat challenging to learn at first but eventually felt like second nature to me.
                 <br> My flavor of Android development uses Java as the core language, which meant that working in android allowed 
                 <br> me to sharpen my Java skills while also learning about development for a completely new platform.
@@ -85,32 +94,12 @@
         </div>
         <hr>
     </div>
-    <p id = "note">There is an issue with the game regarding scalling for different browsers, please make sure the top two alien ships are evenly centered by zooming in/out when you start the game</p>
-    <div id="myJavaScriptGame" style="clear:both;">
-    <img src="img/enemy.png" alt="enemy" width="60px" height = "60px" id="enemySub1">
-    <img src="img/enemy.png" alt="enemy" width="60px" height = "60px" id="enemySub2">
-    <br>
-    <img src="img/enemyBullet.png" alt="enemyBullet"  height = "15px" width = "20px" id="enemyBulletSub1">
-    <img src="img/enemyBullet.png" alt="enemyBullet"  height = "15px" width = "20px" id="enemyBulletSub2">
-    <br>
-    <img src ="img/enemy.png" alt="enemy" width="60px" height = "60px" id="enemyId">
-    <br>
-    <img src="img/enemyBullet.png" alt="enemyBullet"  height = "15px" width = "20px" id="enemyBulletId"> 
-    <br>
-    <img src="img/shipBullet.png" id="myBullet" height ="15px" width="20px">
-    <br>   
-    <img src="img/ship.png" alt="spaceship" height="60px" width="60px" id="shipId">
-    <br>
-    <button onClick="playGame()">Play Game?</button>        
-    </div>
-    <div>
-        <p>Rules of Play: <br>
-           Hi this is a "little" game I wrote in HTML, CSS, and JavaScript<br>
-           The goal is to blow up the alien invaders by firing at them with 'w' key, and moving with left and right!<br>
-           Recall your missile by pressing "w" again <br>
-           Try and get your best time!! <br>  
-           Unfortunately, this only works on desktop.<br>
-        </p>
+    <div id="Footer">
+        <a href="https://www.facebook.com/alex.boehm.39/" style="margin-left: 41%;"><img src ="img/facebook-512.webp" class="shadow" alt="Links" width="60px" height="60px"></a> 
+        <img src ="img/mail.jpg" class="shadow" alt="Links" id="mailId" onClick="myEmail()" width="60px" height="60px"></a> 
+        <a href="https://giphy.com/channel/alexboehm"><img src="img/Giphy-icon.png" class="shadow" alt="Links" width="60px" height="60px"></a>
+        <a href="https://www.linkedin.com/in/alexander-boehm-62a659171"><img src="img/linked.png" class="shadow" alt="Links" width="60px" height="60px"></a> 
+        <br>
     </div>
     <script src = "myScript.js"></script>
 </body>
