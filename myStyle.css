@@ -150,6 +150,9 @@ hr { height: 5px; color: black; background-color: black; }
 /*game*/
 #myJavaScriptGame{
     background-repeat: no-repeat;
+    border: 3px solid black;
+}
+#myJavaScriptGame img{
     
 }
 #note{

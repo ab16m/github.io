@@ -3,6 +3,7 @@
     <head>
         <title>This is my game</title>
         <link rel="stylesheet" type="text/css" href="../myStyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
     <body style="background-color:rgb(231, 166, 166);">
 
@@ -21,25 +22,7 @@
                <span><a href="../coming_soon/media.html" style="text-decoration: none">Media</a></span> 
             </div>
        </div>
-        <p id = "note"><i><b>Note</b></i>: There is an issue with the game regarding scalling for different browsers, please make sure the top two alien ships are evenly centered by zooming in/out when you start the game</p>
-        <div id="myJavaScriptGame" style="clear:both;">
-        <img src="img/enemy.png" alt="enemy" width="60px" height = "60px" id="enemySub1">
-        <img src="img/enemy.png" alt="enemy" width="60px" height = "60px" id="enemySub2">
-        <br>
-        <img src="img/enemyBullet.png" alt="enemyBullet"  height = "15px" width = "20px" id="enemyBulletSub1">
-        <img src="img/enemyBullet.png" alt="enemyBullet"  height = "15px" width = "20px" id="enemyBulletSub2">
-        <br>
-        <img src ="img/enemy.png" alt="enemy" width="60px" height = "60px" id="enemyId">
-        <br>
-        <img src="img/enemyBullet.png" alt="enemyBullet"  height = "15px" width = "20px" id="enemyBulletId"> 
-        <br>
-        <img src="img/shipBullet.png" id="myBullet" height ="15px" width="20px">
-        <br>   
-        <img src="img/ship.png" alt="spaceship" height="60px" width="60px" id="shipId">
-        <br>
-        <button onClick="playGame()">Play Game?</button>        
-        </div>
-        <div id="daRules">
+       <div id="daRules">
             <p><b><u>Rules of Play:</u></b> <br>
             Hi this is a "little" game I wrote in HTML, CSS, and JavaScript<br>
             The goal is to blow up the alien invaders by firing at them with 'w' key, and moving with left and right!<br>
@@ -48,6 +31,27 @@
             Unfortunately, this only works on desktop.<br>
             </p>
         </div>
+        <p id = "note"><i><b>Note</b></i>: There is an issue with the game regarding scaling for different browsers, please make sure the top two alien ships are evenly centered by zooming in/out (Ctrl + Mousewheel) when you start the game</p>
+        <div id="gameContainer">
+            <button onClick="playGame()">Play Game?</button> 
+            <div id="myJavaScriptGame" style="clear:both;">
+                <img src="img/enemy.png" alt="enemy" width="60px" height = "60px" id="enemySub1">
+                <img src="img/enemy.png" alt="enemy" width="60px" height = "60px" id="enemySub2">
+                <br>
+                <img src="img/enemyBullet.png" alt="enemyBullet"  height = "15px" width = "20px" id="enemyBulletSub1">
+                <img src="img/enemyBullet.png" alt="enemyBullet"  height = "15px" width = "20px" id="enemyBulletSub2">
+                <br>
+                <img src ="img/enemy.png" alt="enemy" width="60px" height = "60px" id="enemyId">
+                <br>
+                <img src="img/enemyBullet.png" alt="enemyBullet"  height = "15px" width = "20px" id="enemyBulletId"> 
+                <br>
+                <img src="img/shipBullet.png" id="myBullet" height ="15px" width="20px">
+                <br>   
+                <img src="img/ship.png" alt="spaceship" height="60px" width="60px" id="shipId">
+                <br>       
+            </div>
+        </div> 
+    
         <div id="Footer">
             <a href="https://www.facebook.com/alex.boehm.39/" ><img src ="img/facebook-512.webp" class="shadow" alt="Links" width="60px" height="60px"></a> 
             <img src ="img/mail.jpg" class="shadow" alt="Links" id="mailId" onClick="myEmail()" width="60px" height="60px"></a> 
