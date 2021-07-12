@@ -10,15 +10,16 @@
     color: black;
     text-align: center;
     border: 5px solid black;
-    text-align: left;
+    text-align: center;
     padding-bottom: 20px;   
     
 }
-#hello span{
+#hello div{
     text-align: left;
-    font-size: xx-large;
+    font-size: 6vw;
     margin-left: 5%;
     font-weight: bold;
+    text-align: center;
     padding-bottom: 30px;
    
 }
@@ -27,7 +28,7 @@
 }
 #NavLinks span{
     color: rgb(238, 169, 41);
-    font-size: xx-large;
+    font-size: 4vw;
     padding-left: 20px;
     padding-right: 20px;
     border: 3px solid black;
@@ -36,6 +37,62 @@
 #NavLinks span a{
     text-decoration: none;
     color: rgb(238, 169, 41);
+}
+
+#androidDev{
+    clear: left;
+}
+#androidContainer{
+    clear: both;
+}
+.Blurb{
+    font-size: x-large;
+    text-align: center;
+    margin: 5%;
+    overflow: visible;
+}
+#Blurb2{
+    margin-left: 0%;
+}
+#androidView{
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    
+}
+@media screen and (max-width: 1000px) {
+    #NavLinks{
+        display: flex;
+        flex-direction: column;
+    }
+    #dropDownText{
+        font-size: 40px;
+        padding-left: 50px;
+        height:300px;
+        display:none;
+    }
+    #androidContainer{
+        clear: both;
+        display: flex;
+        flex-direction: column;
+    }
+    #hello img{
+        width: 20%;
+        height: 20%;
+    }
+    #androidView{
+        float: right;
+        width: 100%;
+        height: 100%
+        
+    }
+    #pongContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .Blurb{
+        clear: both;
+    }
 }
 
 .shadow {
@@ -66,20 +123,7 @@
 #pongGame{
     margin: 5%;
     float:left;
-    height: 500px;
-}
-.Blurb{
-    font-size: x-large;
-    text-align: center;
-    margin: 5%;
-}
-#androidDev{
-    clear: left;
-    display: flex;
-    flex-direction: row-reverse;
-}
-#androidView{
-    margin: 5%;
+    height: 30%;
 }
 
 #dropDownText{
@@ -158,7 +202,9 @@ hr { height: 5px; color: black; background-color: black; }
     border: 3px solid black;
 }
 #Footer{
+    margin-top: 5%;
     background-color: rgb(140, 25, 25);
     box-shadow: 15px 15px 5px rgba(128, 128, 128, 0.503);
-    border: 10px solid black;  
+    border: 10px solid black;
+    text-align: center;
 }

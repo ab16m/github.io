@@ -16,13 +16,42 @@ pre:hover{
     background-color: aliceblue;
     font-size: x-large;
 }
+
 #resume{
     border: 3px solid black;
     padding: 3%;
-    margin-left: 17%;
+    margin-left: 14%;
     background-color: lightgray;
-    width: 60%;
+    width: 70%;
     box-shadow: 15px 15px 5px rgba(128, 128, 128, 0.503);
+}
+
+@media screen and (max-width: 1200px)
+{
+    #resume{
+        border: 3px solid black;
+        padding: 3%;
+        background-color: lightgray;
+        width: 90%;
+        box-shadow: 15px 15px 5px rgba(128, 128, 128, 0.503);
+        
+    }
+    pre{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #resume{
+        border: 3px solid black;
+        padding: 3%;
+        background-color: lightgray;
+        width: 100%;
+        box-shadow: 15px 15px 5px rgba(128, 128, 128, 0.503);
+    }
+    pre{
+        font-size: x-small;
+    }
 }
 h2:hover{
     color: rgb(121, 9, 9);
