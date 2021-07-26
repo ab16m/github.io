@@ -47,19 +47,27 @@
 }
 .Blurb{
     font-size: x-large;
-    text-align: center;
+    text-align: left;
     margin: 5%;
     overflow: visible;
+    padding-top: 2.5%;
 }
 #Blurb2{
-    margin-left: 0%;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+#androidDev h1{
+    float:right;
+    margin-right:5%;
 }
 #androidView{
+    clear:right;
     float: right;
     margin-right: 5%;
     margin-bottom: 5%;
     
 }
+
 @media screen and (max-width: 1000px) {
     #NavLinks{
         display: flex;
@@ -128,8 +136,9 @@
 
 #dropDownText{
     font-size: 40px;
-    padding-left: 50px;
-    height:300px
+    padding-left: 20px;
+    height:300px;
+    margin-right: 5%;
 }
 
 #hiddenDiv {
@@ -145,7 +154,8 @@ hr { height: 5px; color: black; background-color: black; }
 
 #dropDownText:hover #hiddenDiv{
     display: block;
-    text-align: center;   
+    text-align: center;
+    margin-right: 5%;
 }
 /*game*/
 #myJavaScriptGame{

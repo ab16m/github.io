@@ -68,3 +68,6 @@ h2:hover span{
 #androidDev{
     padding-top:100px;
 }
+#androidDev h1{
+    float:left
+}
